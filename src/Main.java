@@ -24,5 +24,16 @@ public class Main {
         //Saída de dados - nome armazenado acima
         System.out.println(pessoaTurista.getNome());
 
+        //Pedir cpf e mostrar
+        String cpf = JOptionPane.showInputDialog("Entre com cpf: ");
+
+        //Adicionar cpf no objeto pessoaTurista
+        if(Validacao.cpf(cpf)) {
+            pessoaTurista.setCpf(cpf);
+            System.out.println(pessoaTurista.getCpf());
+        }else{
+            System.out.println("CPF inválido!");
+        }
+
     }
 }
