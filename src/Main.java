@@ -3,6 +3,7 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
         //Classe Objeto = Construtor
+        /*
         Turista mochileiro = new Turista("Lindsay");
         Turista mochileira = new Turista();
 
@@ -14,6 +15,7 @@ public class Main {
         //Definir comportamento
         String retorno = mochileira.viajar();
         JOptionPane.showMessageDialog(null,retorno);
+         */
 
         //Atribuição dinâmica
         String nome = JOptionPane.showInputDialog("Entre com o nome da pessoa Turista: ");
@@ -30,7 +32,7 @@ public class Main {
         //Adicionar cpf no objeto pessoaTurista
         if(Validacao.cpf(cpf)) {
             pessoaTurista.setCpf(cpf);
-            System.out.println(pessoaTurista.getCpf());
+            System.out.println("CPF validado:\n" + pessoaTurista.getCpf());
         }else{
             System.out.println("CPF inválido!");
         }
